@@ -2,6 +2,10 @@
 <html>
 <head>
 	<title>Japanese Translator</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Translate into Japanese</h1>
 	<script type="text/javascript">
 		var dict = {
 			" " :[' '],
@@ -55,10 +59,7 @@
 			}
 			document.getElementById("output").innerHTML=out;
 		}
-</script>
-</head>
-<body>
-<h1>Translate into Japanese</h1>
+	</script>
 <input type="text" id="input" placeholder="Input">
 <input type="button" onClick="translate()">
 <p id="out"></p>
