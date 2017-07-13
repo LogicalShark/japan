@@ -55,7 +55,8 @@ function translateText()
 	{
 		if(text[i] in dict)
 		{
-			out=out.concat(dict[text[i]][Math.floor(Math.random()*letters.length)]);
+			var letters = dict[text[i]];
+			out=out.concat(letters[Math.floor(Math.random()*letters.length)]);
 		}
 		else
 		{
