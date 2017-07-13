@@ -42,7 +42,7 @@ function translateText()
 		".":['\u30FB'],//・
 		"/":['\u30CE'],//ノ
 	};
-	var text = (document.getElementById("input")).split("");
+	var text = (document.getElementById("input").value).split("");
 	var out = "";
 	for(var i = 0; i<text.length; i++)
 	{
