@@ -43,10 +43,13 @@ function translateText()
 		"/":['\u30CE'],//ノ
 	};
 	var text = (document.getElementById("input").value).split("");
+	console.log(text)
 	var out = "";
 	for(var i = 0; i<text.length; i++)
 	{
 		out=out.concat(dict[text[i]][Math.floor(Math.random()*dict.length)]);
+		console.log(dict[text[i]])
+		console.log(dict[text[i]][Math.floor(Math.random()*dict.length)])
 	}
 	(document.getElementById("output")).innerHTML=out;
 }
