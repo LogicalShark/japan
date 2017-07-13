@@ -44,7 +44,7 @@ function translateText()
 		"?":['(unrecognized)']
 	};
 
-	var text = (document.getElementById("input").value).split("");
+	var text = (document.getElementById("input").value.toUpperCase()).split("");
 	console.log(text)
 	var out = "";
 	for(var i = 0; i<text.length; i++)
