@@ -1,7 +1,7 @@
 function translateText()
 {
 	var dict = {
-		" " :["&nbsp;&nbsp;"],
+		" " :["&nbsp;&nbsp;&nbsp;"],
 		"A":['\u5183'],//'\u9FFF'
 		"B":['\u3089','\u4E43'],//ら
 		"C":['\u531A','\u4EC1'],//匚 仁
