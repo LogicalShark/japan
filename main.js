@@ -1,4 +1,4 @@
-function translate()
+function translateText()
 {
 	var dict = {
 		" " :[' '],
@@ -42,11 +42,11 @@ function translate()
 		".":['\u30FB'],//・
 		"/":['\u30CE'],//ノ
 	};
-	var text = document.getElementById("input").split("");
+	var text = (document.getElementById("input")).split("");
 	var out = "";
 	for(var i = 0; i<text.length; i++)
 	{
 		out+=dict[text[i]][Math.floor(Math.random()*dict.length)];
 	}
-	document.getElementById("output").innerHTML=out;
+	(document.getElementById("output")).innerHTML=out;
 }
