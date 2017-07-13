@@ -53,8 +53,15 @@ function translateText()
 	var out = "";
 	for(var i = 0; i<text.length; i++)
 	{
-		var letters = dict[text[i]]
-		out=out.concat(letters[Math.floor(Math.random()*letters.length)]);
+		if(text[i] in dict)
+		{
+			var letters = dict[text[i]]
+			out=out.concat(letters[Math.floor(Math.random()*letters.length)]);
+		}
+		else
+		{
+			out=out.concat(text[i]);			
+		}
 	}
 	(document.getElementById("output")).innerHTML=out;
 }
