@@ -46,7 +46,7 @@ function translateText()
 	var out = "";
 	for(var i = 0; i<text.length; i++)
 	{
-		out+=dict[text[i]][Math.floor(Math.random()*dict.length)];
+		out=out.concat(dict[text[i]][Math.floor(Math.random()*dict.length)]);
 	}
 	(document.getElementById("output")).innerHTML=out;
 }
