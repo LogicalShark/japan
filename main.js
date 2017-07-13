@@ -47,9 +47,8 @@ function translateText()
 	var out = "";
 	for(var i = 0; i<text.length; i++)
 	{
-		out=out.concat(dict[text[i]][Math.floor(Math.random()*dict.length)]);
-		console.log(dict[text[i]])
-		console.log(dict[text[i]][Math.floor(Math.random()*dict.length)])
+		var letters = dict[text[i]]
+		out=out.concat(letters[Math.floor(Math.random()*letters.length)]);
 	}
 	(document.getElementById("output")).innerHTML=out;
 }
